@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app="cvApp">
+	<head>
+		<title>Debanjan Ghosh</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	</head>
+	<body>
+		<div class="container page" ng-controller="CvController">
+			<div class="title center">
+				<span class="name">DEBANJAN GHOSH</span><br/>
+				<span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span><span style="margin-right: 10px" class="smallText">07763431834</span>
+				<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><span class="smallText">debz.ghosh23@gmail.com</span>
+			</div>
+			<div class="summary">
+				<div class="text">
+					A software developer with 2 years of experience in an investment bank, working on middleware applications as well as end to end systems. An enthusiastic, self-motivated person with good analytical, logical and problem solving skills. A team worker and enjoys working with a diverse group of people. 
+				</div>
+			</div>
+			<div class="skillsEducation">
+				<div class="skillsHead">
+					<p class="skillTable heading">Skills</p>
+					<p class="education heading">Education</p>
+				</div>
+				<div class="skillsEd">
+					<table class="skillTable table">
+						<tbody>
+							<tr class="text" ng-repeat="skill in skills">
+								<td>{{skill.language}}</td>
+								<td ng-repeat="level in levels" class="skill">
+									<p class="skillLevel" 
+									   ng-class="{'filledLevel' : level <= skill.level}"></p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table class="education table table-striped">
+						<tbody>
+							<tr class="text" ng-repeat="education in educations">
+								<td width="70%">
+									<span>{{education.school}}</span>
+									<br/>
+									<div class="qualification smallText" style="display:inline-block;" ng-repeat="subject in education.subjects">
+										<em style="display:inline:block; float:left;">{{subject.subject}},&nbsp;</em>
+									</div>
+								</td>
+								<td width="25%">
+									<span>{{education.years}}</span>
+								</td>
+							</tr>
+						</tbody>		
+					</table>
+				</div>
+			</div>
+			<div class="experiences">
+				<p class="heading">Experiences</p>
+				<table class="text table table-striped">
+					<tbody>
+						<tr ng-repeat="experience in experiences">
+							<td width="25%">{{experience.date}}</td>
+							<td widht="75%">
+								{{experience.company}}, <em class="smallText">{{experience.position}}</em>
+								<br/><br/>
+								<p class="smallText" ng-repeat="desc in experience.descs">
+									{{desc}}
+								</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="interests">
+				<p class="heading">Interests</p>
+				<div class="text">
+					Playing cricket and racquet sports such as badminton and table tennis<br/>
+					Volunteering at the local aviary <br/>
+					Producing music
+				</div>
+			</div>
+		</div>
+
+		<script src="lib/angular/angular.js"></script>
+		<script src="js/app.js"></script>	
+		<script src="js/CvController.js"></script>	
+	</body>
+</html>
