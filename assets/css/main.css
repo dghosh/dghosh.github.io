@@ -5849,6 +5849,23 @@ body {
   body .nav > li > a:hover, body .nav > li > a:focus {
     background-color: #0F0F12;
     color: #ff4eff; }
+  body .main {
+    margin-top: 30px; }
+    body .main .profilePage {
+      width: 100%;
+      display: inline-block;
+      margin-top: 30px; }
+      body .main .profilePage .profile {
+        width: 35%;
+        float: left;
+        display: inline-block; }
+      body .main .profilePage .roles {
+        width: 60%;
+        display: inline-block;
+        margin-left: 45px;
+        font-size: 60px;
+        float: left;
+        color: #ff4eff; }
   @media all and (max-width: 800px) {
     body .headerLinks {
       float: left;
