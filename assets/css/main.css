@@ -5809,6 +5809,7 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+/* ------------------------------- FONT FACES -------------------------------------------- */
 @font-face {
   font-family: 'fira_sansbook';
   src: url("../fonts/firaSans/firasans-book-webfont.woff2") format("woff2"), url("../fonts/firaSans/firasans-book-webfont.woff") format("woff");
@@ -5824,6 +5825,22 @@ button.close {
   src: url("../fonts/firaSans/firasans-heavyitalic-webfont.woff2") format("woff2"), url("../fonts/firaSans/firasans-heavyitalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'fira_sansbold';
+  src: url("../fonts/firaSans/firasans-bold-webfont.woff2") format("woff2"), url("../fonts/firaSans/firasans-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'fira_sanssemibold';
+  src: url("../fonts/firaSans/firasans-semibold-webfont.woff2") format("woff2"), url("../fonts/firaSans/firasans-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'fira_sansmedium';
+  src: url("../fonts/firaSans/firasans-medium-webfont.woff2") format("woff2"), url("../fonts/firaSans/firasans-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/* --------------------------VARIABLES--------------------------------------*/
 body {
   font-family: "fira_sanslight";
   background-color: #0F0F12;
@@ -5860,11 +5877,14 @@ body {
         float: left;
         display: inline-block; }
       body .main .profilePage .roles {
+        font-family: 'fira_sansbook';
+        margin-left: 10px;
         width: 60%;
         display: inline-block;
-        margin-left: 45px;
-        font-size: 60px;
-        float: left; }
+        font-size: 5em; }
+        body .main .profilePage .roles p {
+          float: right;
+          margin-left: 70px; }
   @media all and (max-width: 800px) {
     body .headerLinks {
       float: left;
