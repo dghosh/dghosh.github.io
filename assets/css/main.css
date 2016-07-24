@@ -5809,11 +5809,29 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+@font-face {
+  font-family: 'fira_sansbook';
+  src: url("../fonts/firaSans/firasans-book-webfont.woff2") format("woff2"), url("../fonts/firaSans/firasans-book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'fira_sanslight';
+  src: url("../fonts/firaSans/firasans-light-webfont.woff2") format("woff2"), url("../fonts/firaSans/firasans-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'fira_sansheavy_italic';
+  src: url("../fonts/firaSans/firasans-heavyitalic-webfont.woff2") format("woff2"), url("../fonts/firaSans/firasans-heavyitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 body {
+  font-family: "fira_sanslight";
   background-color: #0F0F12;
-  color: #19afaf; }
+  color: #FFF; }
   body header {
     font-size: 20px; }
+  body .nav > li > a {
+    color: #FFF; }
   body .headerLinks {
     float: right;
     margin-top: 10px;
@@ -5826,11 +5844,11 @@ body {
     justify-content: space-around; }
   body .headerTitle {
     margin-top: 10px; }
-  body .nav > li > a {
-    color: #19afaf; }
+    body .headerTitle li > a {
+      color: #ff4eff; }
   body .nav > li > a:hover, body .nav > li > a:focus {
     background-color: #0F0F12;
-    color: #fd8b00; }
+    color: #ff4eff; }
   @media all and (max-width: 800px) {
     body .headerLinks {
       float: left;
