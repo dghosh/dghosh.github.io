@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="profile">
 	<head>
 		<title>Debanjan Ghosh</title>
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	</head>
-	<body>
+	<body ng-controller="MainController">
 		<header>
 			<div class="container">
 				<ul class="nav navbar-nav headerTitle">
-					<li><a href="#">DEBANJAN GHOSH</a></li>
+					<li><a href="#" ng-click="frontPage()">DEBANJAN GHOSH</a></li>
 				</ul>
 				<ul class="nav navbar-nav headerLinks">
-					<li><a href="#">ABOUT</a></li>
+					<li><a href="#" ng-click="about()">ABOUT</a></li>
 			        <li><a href="#">CONTACT</a></li>
 			        <li><a href="cv.html">CV</a></li>
 				</ul>
@@ -19,15 +19,20 @@
 		</header>
 
 		<div class="container main">
-			<div class="profilePage">
+			<div class="profilePage" ng-if="!about">
 				<div class="profile">
-					<img src="assets/img/deb.jpg" width="100%">
-					</>
+					<img ng-src="{{image}}" width="100%" alt="Debanjan Ghosh">
 				</div>
 				<div class="roles">
-					<p>Developer, UX Enthusiast, Music Producer & Photographer</p>
+					<p>{{role}}</p>
 				</div>
 			</div>
+
+			<about ng-if="about"></about>
 		</div>
+
+		<script src="lib/angular/angular.js"></script>
+		<script src="js/app.js"></script>	
+		<script src="js/MainController.js"></script>
 	</body>
 </html>

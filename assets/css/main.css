@@ -5883,8 +5883,9 @@ body {
         display: inline-block;
         font-size: 5em; }
         body .main .profilePage .roles p {
-          float: right;
           margin-left: 70px; }
+    body .main .about {
+      font-size: 2em; }
   @media all and (max-width: 800px) {
     body .headerLinks {
       float: left;
