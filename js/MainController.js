@@ -7,9 +7,6 @@ profile.controller('MainController',
 		$scope.image = "assets/img/deb.jpg";
 		$scope.showAbout = false;
 
-		// $scope.about = function() {
-		// 	$scope.about = true;
-		// }
 	}
 ])
 .directive('about', function() {

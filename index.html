@@ -8,7 +8,7 @@
 		<header>
 			<div class="container">
 				<ul class="nav navbar-nav headerTitle">
-					<li><a href="#" ng-click="about != about">DEBANJAN GHOSH</a></li>
+					<li><a href="#" ng-click="showAbout != showAbout">DEBANJAN GHOSH</a></li>
 				</ul>
 				<ul class="nav navbar-nav headerLinks">
 					<li><a href="#" ng-click="showAbout = !showAbout">ABOUT</a></li>
@@ -19,15 +19,15 @@
 		</header>
 
 		<div class="container main">
-			<div class="profilePage" ng-show="!showAbout">
+			<div class="profilePage">
 				<div class="profile">
 					<img ng-src="{{image}}" width="100%" alt="Debanjan Ghosh">
 				</div>
 				<div class="roles">
-					<p>{{role}}</p>
+					<p ng-show="!showAbout">{{role}}</p>
+					<about ng-show="showAbout"></about>
 				</div>
 			</div>
-			<about ng-show="showAbout"></about>
 		</div>
 
 		<script src="lib/angular/angular.js"></script>
