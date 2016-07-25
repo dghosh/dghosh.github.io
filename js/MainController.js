@@ -3,13 +3,12 @@
 profile.controller('MainController', 
 	['$scope', function($scope) {
 
-		var role = "Developer, UX Enthusiast, Music Producer & Photographer";
-		$scope.role = role;
+		$scope.role = "Developer, UX Enthusiast, Music Producer & Photographer";
 		$scope.image = "assets/img/deb.jpg";
-
+		$scope.about = false;
+		
 		$scope.frontPage = function() {
 			$scope.about = false;
-			$scope.role = role;
 		}
 
 		$scope.about = function() {
