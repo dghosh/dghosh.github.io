@@ -19,15 +19,16 @@
 		</header>
 
 		<div class="container main">
-			<div class="profilePage">
+			<div class="profilePage" ng-show="!showAbout">
 				<div class="profile">
 					<img ng-src="{{image}}" width="100%" alt="Debanjan Ghosh">
 				</div>
 				<div class="roles">
-					<p ng-show="!showAbout">{{role}}</p>
-					<about ng-show="showAbout" ng-class="about"></about>
+					<p>{{role}}</p>
 				</div>
 			</div>
+			
+			<about ng-show="showAbout" ng-class="about"></about>
 		</div>
 
 		<script src="lib/angular/angular.js"></script>
