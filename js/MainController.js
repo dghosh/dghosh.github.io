@@ -5,7 +5,7 @@ profile.controller('MainController',
 
 		$scope.role = "Developer, UX Enthusiast, Music Producer & Photographer";
 		$scope.image = "assets/img/deb.jpg";
-		$scope.about = false;
+		$scope.showAbout = false;
 
 		// $scope.about = function() {
 		// 	$scope.about = true;
