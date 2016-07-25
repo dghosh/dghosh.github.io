@@ -7,10 +7,6 @@ profile.controller('MainController',
 		$scope.image = "assets/img/deb.jpg";
 		$scope.about = false;
 
-		$scope.frontPage = function() {
-			$scope.about = false;
-		}
-
 		$scope.about = function() {
 			$scope.about = true;
 		}
