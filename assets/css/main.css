@@ -5841,6 +5841,7 @@ button.close {
   font-weight: normal;
   font-style: normal; }
 /* --------------------------VARIABLES--------------------------------------*/
+/* ------------------------CSS----------------------------------------------*/
 body {
   font-family: "fira_sanslight";
   background-color: #0F0F12;
@@ -5888,6 +5889,8 @@ body {
           font-size: 30px; }
     body .main .about {
       font-size: 2em; }
+      body .main .about .soundcloud {
+        color: #ff3a00; }
   @media all and (max-width: 800px) {
     body .headerLinks {
       float: left;
