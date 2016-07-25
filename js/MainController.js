@@ -8,7 +8,7 @@ profile.controller('MainController',
 		$scope.image = "assets/img/deb.jpg";
 
 		$scope.frontPage = function() {
-			// $scope.about = false;
+			$scope.about = false;
 			$scope.role = role;
 		}
 
