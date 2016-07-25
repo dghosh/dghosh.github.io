@@ -19,7 +19,7 @@
 		</header>
 
 		<div class="container main">
-			<div class="profilePage" ng-show="!showAbout">
+			<div class="profilePage" ng-show="!about">
 				<div class="profile">
 					<img ng-src="{{image}}" width="100%" alt="Debanjan Ghosh">
 				</div>
@@ -28,7 +28,7 @@
 				</div>
 			</div>
 			<p ng-model="about">{{about}}</p>
-			<about ng-show="showAbout"></about>
+			<about ng-show="about"></about>
 		</div>
 
 		<script src="lib/angular/angular.js"></script>
