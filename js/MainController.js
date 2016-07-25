@@ -9,9 +9,11 @@ profile.controller('MainController',
 
 		$scope.frontPage = function() {
 			$scope.about = false;
-
 		}
 
+		$scope.about = function() {
+			$scope.about = true;
+		}
 	}
 ])
 .directive('about', function() {
