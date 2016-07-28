@@ -5881,6 +5881,12 @@ body {
     margin-right: 5px; }
   body .glyphicon-envelope:before {
     margin-right: 5px; }
+  body .titleDetails {
+    display: inline-block; }
+  body .profile {
+    width: 10%;
+    float: right;
+    display: inline-block; }
   @media print {
     body .heading {
       color: #4C398B !important; }

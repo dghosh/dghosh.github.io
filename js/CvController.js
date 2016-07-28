@@ -2,13 +2,16 @@
 
 cvApp.controller('CvController', 
 	function CvController($scope) {
+
+		// $scope.image = "assets/img/deb.jpg";
+
 		$scope.experiences = [
 			{
 				date: "2014 - Present",
 				company: "JP Morgan Chase & Co",
 				position: "Technical Analyst",
 				descs: [
-					"Business Activity Monitoring(BAM): Currently working in an agile feature team on the 'one stop shop' operations dashboard for payment interventions and BAM alert management. This includes end to end development using Java, UM MQ, Spring, JavaScript/AngularJS.",
+					"Business Activity Monitoring(BAM): Currently working in an agile feature team on the 'one stop shop' operations dashboard for payment interventions and BAM alert management. This includes end to end development using Java, UM MQ, Spring, JavaScript/AngularJS. Currently been involved in UI development for the new BAM interface, using Javascript(ES6) along with Angular JS, HTML and Sass.",
 					"Accounting Manager: Middleware application written in Java that allows one of the payment system to send real time postings to another system with Cassandra as the persistence layer."
 				]	
 			},
