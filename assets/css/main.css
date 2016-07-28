@@ -5846,6 +5846,8 @@ body {
   font-family: "fira_sanslight";
   background-color: #0F0F12;
   color: #FFF; }
+  body [ng\:cloak], body [ng-cloak], body [data-ng-cloak], body [x-ng-cloak], body .ng-cloak, body .x-ng-cloak {
+    display: none !important; }
   body header {
     font-size: 20px; }
   body .nav > li > a {
