@@ -4,7 +4,7 @@
 		<title>Debanjan Ghosh</title>
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	</head>
-	<body ng-controller="MainController">
+	<body ng-controller="MainController"  ng-cloak>
 		<header>
 			<div class="container">
 				<ul class="nav navbar-nav headerTitle">
@@ -20,10 +20,10 @@
 
 		<div class="container main">
 			<div class="profilePage" ng-show="!showAbout">
-				<div class="profile" ng-cloak>
+				<div class="profile">
 					<img ng-src="{{image}}" width="100%" alt="Debanjan Ghosh">
 				</div>
-				<div class="roles" ng-cloak>
+				<div class="roles">
 					<p>{{::role}}</p>
 				</div>
 			</div>
