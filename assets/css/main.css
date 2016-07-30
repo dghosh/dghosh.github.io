@@ -8042,7 +8042,7 @@ body {
     height: 60px; }
   body header {
     font-size: 20px; }
-  body .nav > li > a {
+  body .nav > li > a, body .nav > li > p {
     color: #FFF; }
   body .headerLinks {
     float: right;
