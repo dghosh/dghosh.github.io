@@ -8031,7 +8031,8 @@ button.close {
 body {
   font-family: "fira_sanslight";
   background-color: #0F0F12;
-  color: #FFF; }
+  color: #FFF;
+  /*Change icons circle size and color here*/ }
   body [ng\:cloak], body [ng-cloak], body [data-ng-cloak], body [x-ng-cloak], body .ng-cloak, body .x-ng-cloak {
     display: none !important; }
   body .footer {
@@ -8084,21 +8085,51 @@ body {
       font-size: 2em; }
       body .main .about .soundcloud {
         color: #ff3a00; }
+  body .socialIcons {
+    position: absolute;
+    left: 42%; }
+  body .social-icons .fa {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 2em;
+    background-color: #FFF;
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  body .social-icons.icon-circle .fa {
+    border-radius: 50%; }
+  body .social-icons .fa-facebook {
+    color: #3C599F; }
+  body .social-icons .fa-twitter {
+    color: #32CCFE; }
+  body .social-icons .fa-soundcloud {
+    color: #f50; }
+  @media all and (max-width: 1200px) {
+    body .main .roles {
+      font-size: 3em !important; } }
   @media all and (max-width: 800px) {
     body .headerLinks {
       float: left;
-      justify-content: space-around; } }
+      justify-content: space-around; }
+    body .main .roles {
+      font-size: 2.5em !important; }
+    body .socialIcons {
+      left: 0;
+      float: left; } }
   @media all and (max-width: 600px) {
     body .headerLinks {
       -webkit-flex-flow: column wrap;
       flex-flow: column wrap;
-      padding: 10px; }
-    body .headerLinks a {
-      text-align: center;
-      padding: 10px;
-      border-top: 1px solid rgba(255, 255, 255, 0.3);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-    body .headerLinks li:last-of-type a {
-      border-bottom: none; } }
+      padding-top: 10px; }
+    body .main .roles {
+      font-size: 2.5em !important; } }
+  @media all and (max-width: 550px) {
+    body .main .roles {
+      font-size: 2em !important; } }
 
 /*# sourceMappingURL=main.css.map */
