@@ -15,6 +15,8 @@ profile.controller('MainController',
 			$scope.showAbout = true;
 		}
 
+		$scope.email = "debz.ghosh23@gmail.com";
+
 	}
 ])
 .directive('about', function() {
