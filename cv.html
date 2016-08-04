@@ -46,7 +46,7 @@
 									<span>{{education.school}}</span>
 									<br/>
 									<div class="qualification smallText" style="display:inline-block;" ng-repeat="subject in education.subjects">
-										<em style="display:inline:block; float:left;">{{subject.subject}},&nbsp;</em>
+										<em>{{subject.subject}}</em><em ng-if="!$last">,&nbsp;</em>
 									</div>
 								</td>
 								<td width="25%">
