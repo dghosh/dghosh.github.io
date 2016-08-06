@@ -1,21 +1,29 @@
 'use strict';
 
 profile.controller('MainController', 
-	['$scope', function($scope) {
+	['$scope', '$http', function($scope, $http) {
 
 		$scope.role = "Developer, UX Enthusiast, Music Producer & Photographer";
 		$scope.image = "assets/img/deb.jpg";
 		$scope.showAbout = false;
+		$scope.showInstagram = false;
+		$scope.email = "debz.ghosh23@gmail.com";
 
 		$scope.roles = function() {
 			$scope.showAbout = false;
+			$scope.showInstagram = false;
 		}
 
 		$scope.about = function() {
 			$scope.showAbout = true;
+			$scope.showInstagram = false;
 		}
 
-		$scope.email = "debz.ghosh23@gmail.com";
+		$scope.instagram = function($scope, $http) {
+			$scope.showInstagram = true;
+			$scope.showAbout = false;
+		}
+
 
 	}
 ])
