@@ -19,7 +19,7 @@ profile.controller('MainController',
 			$scope.showInstagram = false;
 		}
 
-		$scope.instagram = function($scope, $http) {
+		$scope.instagram = function() {
 			$scope.showInstagram = true;
 			$scope.showAbout = false;
 		}
