@@ -33,3 +33,9 @@ profile.controller('MainController',
 		templateUrl: 'js/about.html'
 	}
 })
+.directive('instagram', function() {
+	return {
+		restrict: 'E',
+		template: "<p>This is instagram</p>"
+	}
+})
