@@ -44,7 +44,7 @@ profile.controller('MainController',
 					var imageData = data.data;
 					var imageLinks = [];
 					imageData.forEach((image) => {
-						imageLinks.push(image.images.thumbnail);
+						imageLinks.push(image.images.thumbnail.url);
 					});
 					return imageLinks;
 				})
@@ -53,7 +53,7 @@ profile.controller('MainController',
 				});
 
 				console.log(images);
-				
+
 			}
 
 		}
