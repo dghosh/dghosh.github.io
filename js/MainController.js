@@ -40,6 +40,7 @@ profile.controller('MainController',
 		controller: function($scope, $http) {
 			console.log($scope.showInstagram);
 			if ($scope.showInstagram) {
+				console.log("helllo");
 				var accessToken = "280227547.4ffd8a3.43c970c362be40d6bee37279ec6f5c81";
 				var url = "https://api.instagram.com/v1/users/self/media/recent/?callback=JSON_CALLBACK&access_token=" + accessToken;
 				var images = $http.jsonp(url)
