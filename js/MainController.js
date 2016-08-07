@@ -45,7 +45,7 @@ profile.controller('MainController',
 				.success(function(data) {
 					var imageData = data.data;
 					imageData.forEach((image) => {
-						imageLinks.push(image.images.thumbnail.url);
+						$scope.imageLinks.push(image.images.thumbnail.url);
 					});
 				})
 				.error(function(data, status) {
