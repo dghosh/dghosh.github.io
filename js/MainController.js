@@ -38,21 +38,20 @@ profile.controller('MainController',
 			$scope.getImages = function() {
 				$scope.showInstagram = true;
 				$scope.showAbout = false;
+				
+				$scope.imageLinks = [];
 
 				var images = $http.jsonp(url)
 				.success(function(data) {
 					var imageData = data.data;
-					var imageLinks = [];
 					imageData.forEach((image) => {
 						imageLinks.push(image.images.thumbnail.url);
 					});
-					return imageLinks;
 				})
 				.error(function(data, status) {
 					console.log(status);
 				});
 
-				console.log(images);
 
 			}
 
