@@ -40,15 +40,20 @@ profile.controller('MainController',
 				$scope.showAbout = false;
 
 				var images = $http.jsonp(url)
-					.success(function(data) {
-						var imageData = data.data;
-						imageData.forEach((image) => {
-							console.log(image.images.thumbnail);
-						});
-					})
-					.error(function(data, status) {
-						console.log(status);
+				.success(function(data) {
+					var imageData = data.data;
+					var imageLinks = [];
+					imageData.forEach((image) => {
+						imageLinks.push(image.images.thumbnail);
 					});
+					return imageLinks;
+				})
+				.error(function(data, status) {
+					console.log(status);
+				});
+
+				console.log(images);
+				
 			}
 
 		}
