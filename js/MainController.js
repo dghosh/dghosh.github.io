@@ -38,7 +38,7 @@ profile.controller('MainController',
 		restrict: 'E',
 		templateUrl: "js/instagram.html",
 		controller: function($scope, $http) {
-			console.log(typeof($scope.showInstagram));
+			console.log($scope);
 			if ($scope.showInstagram) {
 				console.log("helllo");
 				var accessToken = "280227547.4ffd8a3.43c970c362be40d6bee37279ec6f5c81";
