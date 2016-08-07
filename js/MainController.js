@@ -46,7 +46,7 @@ profile.controller('MainController',
 				})
 				.error(function(data, status) {
 					console.log(status);
-				})
+				});
 		}
 	}
 })
