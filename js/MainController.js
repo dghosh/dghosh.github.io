@@ -45,7 +45,7 @@ profile.controller('MainController',
 				.success(function(data) {
 					var imageData = data.data;
 					imageData.forEach((image) => {
-						$scope.imageLinks.push({
+						$scope.images.push({
 							url: image.images.thumbnail.url,
 							caption: image.caption ? image.caption.text : image.user.full_name
 						});
