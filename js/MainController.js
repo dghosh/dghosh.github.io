@@ -39,13 +39,16 @@ profile.controller('MainController',
 				$scope.showInstagram = true;
 				$scope.showAbout = false;
 				
-				$scope.imageLinks = [];
+				$scope.images = [];
 
-				var images = $http.jsonp(url)
+				var getImages = $http.jsonp(url)
 				.success(function(data) {
 					var imageData = data.data;
 					imageData.forEach((image) => {
-						$scope.imageLinks.push(image.images.thumbnail.url);
+						$scope.imageLinks.push({
+							url: image.images.thumbnail.url,
+							caption: image.caption ? image.caption.text : image.user.full_name
+						});
 					});
 				})
 				.error(function(data, status) {

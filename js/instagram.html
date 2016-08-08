@@ -1,6 +1,7 @@
 <p>This is instagram</p>
-<p>{{showInstagram}}</p>
 
-<!-- <div ng-repeat="image in imageLinks">
-	<img ng-src="{{image}}">
-</div> -->
+<div class="container" ng-repeat="image in images">
+	<div class="image"
+		<img ng-src="{{image.url}}" alt="{{image.caption}}">
+	</div>
+</div>
