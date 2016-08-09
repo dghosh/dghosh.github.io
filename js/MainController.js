@@ -19,6 +19,11 @@ profile.controller('MainController',
 			$scope.showInstagram = false;
 		}
 
+		$scope.instagram = function() {
+			$scope.showAbout = false;
+			$scope.showInstagram = true;
+		}
+
 	}
 ])
 .directive('about', function() {
@@ -36,9 +41,7 @@ profile.controller('MainController',
 			var url = "https://api.instagram.com/v1/users/self/media/recent/?callback=JSON_CALLBACK&access_token=" + accessToken;
 
 			$scope.getImages = function() {
-				$scope.showInstagram = true;
-				$scope.showAbout = false;
-				
+
 				$scope.images = [];
 
 				var getImages = $http.jsonp(url)
