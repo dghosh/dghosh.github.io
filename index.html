@@ -22,7 +22,7 @@
 		</header>
 
 		<div class="container main">
-			<div class="profilePage" ng-show="!showAbout && !showInstagram">
+			<div class="profilePage" ng-if="!showAbout && !showInstagram">
 				<div class="profile">
 					<img ng-src="{{image}}" width="100%" alt="Debanjan Ghosh">
 				</div>
@@ -31,8 +31,8 @@
 				</div>
 			</div>
 			
-			<about ng-show="showAbout" ng-class="about"></about>
-			<instagram ng-show="showInstagram"></instagram>
+			<about ng-if="showAbout" ng-class="about"></about>
+			<instagram ng-if="showInstagram"></instagram>
 		</div>
 
 		<footer class="footer">
