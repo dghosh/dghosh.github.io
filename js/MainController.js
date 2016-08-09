@@ -51,7 +51,7 @@ profile.controller('MainController',
 					var imageData = data.data;
 					imageData.forEach((image) => {
 						$scope.images.push({
-							url: image.images.standard_resolution.url,
+							url: image.images.thumbnail.url,
 							caption: image.caption ? image.caption.text : image.user.full_name
 						});
 					});
