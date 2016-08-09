@@ -8085,6 +8085,13 @@ body {
       font-size: 2em; }
       body .main .about .soundcloud {
         color: #ff3a00; }
+    body .main .imageParent {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+    body .main .image {
+      padding: 10px;
+      margin-top: 10px; }
   body .socialIcons {
     margin-left: 10px;
     position: absolute;
