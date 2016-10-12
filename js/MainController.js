@@ -66,3 +66,9 @@ profile.controller('MainController',
 		}
 	}
 })
+.directive('gecko', function() {
+	return {
+		restrict: 'E',
+		templateUrl: "js/gecko.html"
+	}
+})

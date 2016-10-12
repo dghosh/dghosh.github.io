@@ -8083,6 +8083,37 @@ body {
           margin-left: 70px; }
         body .main .profilePage .roles .about {
           font-size: 30px; }
+      body .main .profilePage .container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 100%; }
+      body .main .profilePage .outer {
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        background-color: #000000;
+        border-radius: 200px 200px 0 0; }
+      body .main .profilePage .inner {
+        margin-top: 5%;
+        margin-left: 5%;
+        position: absolute;
+        width: 180px;
+        height: 90px;
+        background-color: #fff;
+        border-radius: 200px 200px 0 0; }
+      body .main .profilePage .pointer {
+        position: absolute;
+        width: 90px;
+        height: 6px;
+        left: 50%;
+        background: red;
+        bottom: 2px;
+        transform-origin: 0px 3px;
+        -ms-transform: rotate(180deg);
+        /* IE 9 */
+        -webkit-transform: rotate(180deg);
+        /* Safari */
+        transform: rotate(180deg); }
     body .main .about {
       font-size: 2em; }
       body .main .about .soundcloud {
