@@ -3,15 +3,27 @@
 cvApp.controller('CvController', 
 	function CvController($scope) {
 
-		// $scope.image = "assets/img/deb.jpg";
+		$scope.image = "assets/img/deb.jpg";
+
+
+		$scope.phoneNumber = "07763431834";
+		$scope.personalEmail = "debz.ghosh23@gmail.com";
+		$scope.workEmail = "debanjan.ghosh@jpmchase.com";
 
 		$scope.experiences = [
 			{
-				date: "2014 - Present",
+				date: "July 2016 - Present",
+				company: "JP Morgan Chase & Co",
+				position: "Application Support Analyst",
+				descs: ["Currently working in a team that manages a suite of applications in the Markets area: DCPP, OTM, ACM, 3PDP as well as BAM. As part of the BAU role, we as a team monitor the health of the different applications using various tools such as Geneos, Splunk and Qpid Manager. We engage with business users whenever there is any incident or issue reported. We make sure that the problem is resolved as soon as possible so that the users can get back to BAU without affecting their SLAs.",
+				"I am also responsible for being the production owner for BAM which requires me to ensure a good health of the application and attending to any incidents or issues arising."]
+			},
+			{
+				date: "September 2014 - July 2016",
 				company: "JP Morgan Chase & Co",
 				position: "Technical Analyst",
 				descs: [
-					"Business Activity Monitoring(BAM): Currently working in an agile feature team on the 'one stop shop' operations dashboard for payment interventions and BAM alert management. This includes end to end development using Java, UM MQ, Spring, JavaScript/AngularJS. Currently been involved in UI development for the new BAM interface, using Javascript(ES6) along with Angular JS, HTML and Sass.",
+					"Business Activity Monitoring(BAM): Worked in an agile feature team on the 'one stop shop' operations dashboard for payment interventions and BAM alert management. This includes end to end development using Java, UM MQ, Spring, JavaScript/AngularJS.",
 					"Accounting Manager: Middleware application written in Java that allows one of the payment system to send real time postings to another system with Cassandra as the persistence layer."
 				]	
 			},
@@ -21,48 +33,56 @@ cvApp.controller('CvController',
 				position: "Technology Intern",
 				descs: ["Developed a reference implementation for deploying business applications to an application server using a release automation tool and documented the complete deployment process"]
 			},
-			{
-				date: "June 2012 - September 2012",
-				company: "ORCHID Project - University of Southampton",
-				position: "Project Support Analyst",
-				descs: ["Worked as a Web Developer using Python/Django framework for the project on 'Intelligent Agents for Electrical Vehicle Charging' and developed the website to be used for the project trials."]
-			},
-			{
-				date: "2010 - 2012",
-				company: "Southampton University OTC",
-				position: "Officer Cadet",
-				desc: [""]
-			}
+			// {
+			// 	date: "June 2012 - September 2012",
+			// 	company: "ORCHID Project - University of Southampton",
+			// 	position: "Project Support Analyst",
+			// 	descs: ["Worked as a Web Developer using Python/Django framework for the project on 'Intelligent Agents for Electrical Vehicle Charging' and developed the website to be used for the project trials."]
+			// },
+			// {
+			// 	date: "2010 - 2012",
+			// 	company: "Southampton University OTC",
+			// 	position: "Officer Cadet",
+			// 	desc: [""]
+			// }
 		];
 
 		$scope.skills = [
 			{
 				language: "Java",
-				level: 4
+				level: 3
 			},
-			{
-				language: "Spring",
-				level: 2
-			},
+			// {
+			// 	language: "Spring",
+			// 	level: 2
+			// },
 			{
 				language: "JavaScript",
 				level: 4
 			},
-			{
-				language: "AngularJS",
-				level: 3
-			},
+			// {
+			// 	language: "AngularJS",
+			// 	level: 3
+			// },
 			{
 				language: "HTML/CSS",
 				level: 4
 			},
-			// {
-			// 	language: "Python",
-			// 	level: 3
-			// },
+			{
+				language: "Python/Perl",
+				level: 3
+			},
 			{
 				language: "Databases",
 				level: 3
+			},
+			{
+				language: "Unix",
+				level: 3
+			},
+			{
+				language: "Autosys",
+				level: 1
 			},
 		];
 
